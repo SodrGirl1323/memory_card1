@@ -6,8 +6,8 @@ from PyQt5.QtWidgets import (
         QPushButton, QLabel)
 from random import shuffle
 class Question():
-    def __init__(self, question, right, wrong1, wrong2, wrong3):
-        self.question = question
+    def __init__(self, question1, right, wrong1, wrong2, wrong3):
+        self.question = question1
         self.right = right
         self.wrong1 = wrong1
         self.wrong2 = wrong2
@@ -177,5 +177,6 @@ btn_OK.clicked.connect(click_ok)
 
 window.show()
 app.exec()
+
 
 
